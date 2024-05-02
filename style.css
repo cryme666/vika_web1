@@ -1,5 +1,8 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f69494;
 }
 
 .header-nav {
@@ -18,30 +21,20 @@ body {
   position: absolute;
 }
 
-body {
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #eaeaea;
-}
 
 .mikro-img {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   font-size: 10px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.loh {
-  width: 200px;
-  height: 200px;
+  font-family: "Raleway", sans-serif;
+  
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  background-color: #892424;
   color: #fff;
   padding: 10px;
   position: fixed;
@@ -54,22 +47,32 @@ body {
   width: 50px;
   height: 50px;
   margin-right: 10px;
-}
+  /* transition: 0.3s; */
 
+}
 
 .navbar-logo:hover .author-info {
   display: block;
 }
 
+.main-img {
+  width: 100%;
+  height: 100%; 
+  border-radius: 30px;
+}
+
 .author-info {
+  text-align: center;
   display: none;
   position: absolute;
   top: 70px;
   left: 10px;
-  width: 400px;
+  width: 300px;
   padding: 10px;
-  background-color: #333;
+  border-radius: 15px;
+  background-color: #892424;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  
 }
 
 .container {
@@ -105,16 +108,19 @@ body {
   color: #fff;
   text-decoration: none;
   padding: 10px;
+  transition: 0.3s;
 }
 
 .nav a:hover {
-  background-color: #555;
+  background-color: #d42c2c;
+  color: #000000;
+  border-radius: 15px;
 }
 
 .title {
   margin-top: 150px;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .task {
@@ -123,6 +129,13 @@ body {
   justify-content: center;
   align-items: center;
   
+}
+
+.input-task {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .buton
@@ -136,36 +149,38 @@ body {
 .input { 
   width: 300px;
   height: 50px;
-  border: 2px solid #333;
-  border-radius: 10px;
+  /* border: 2px solid #333; */
+  border: none;
+  border-radius: 15px;
   padding: 10px;
-  margin: 0 10px;
+  margin: 10px;
+  /* margin: 0 10px; */
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
-
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
 }
 
 .output
 {
   font-size: 20px;
-  width: 1000px;
-  height: 100px;
-  border: 2px solid #333;
-  border-radius: 10px;
+  width: 300px;
+  height: 50px;
+  border-radius: 15px;
+  border: none;
   padding: 10px;
-  margin: 0 10px;
+  margin-bottom: 80px;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .knopka
 {
-  background-color: #4CAF50;
+  background-color: #af4c4c;
   color: white;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 15px;
   cursor: pointer;
   font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
