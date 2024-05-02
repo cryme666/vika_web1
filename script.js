@@ -6,13 +6,8 @@ const submitBtn = document.getElementById("submit-but")
 
 
 function triangleType(a, b, c) {
-  if (isNaN(a) || isNaN(b) || isNaN(c)) {
-    result.value = 'Введіть натуральні числа';
-    return;
-  }
-if ((a <= 0) || (b <= 0) || (c <= 0)) {
-    result.value = 'Введіть натуральні числа';
-    return;
+if ((a <= 0) || (b <= 0) || (c <= 0)) { 
+    return 'Введіть натуральні числа';
   }
 
   if (a + b > c && b + c > a && a + c > b) {

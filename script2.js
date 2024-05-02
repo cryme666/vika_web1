@@ -5,7 +5,7 @@ const submitBtn = document.getElementById("submit-but")
 submitBtn.addEventListener("click", function () {
     const a = Number(getNum.value);
     
-    if (isNaN(a) || a <= 0) {
+    if (a <= 0) {
         result.value = 'Введіть натуральне число';
         return;
     }

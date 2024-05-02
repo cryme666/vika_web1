@@ -3,17 +3,15 @@ const result = document.getElementById("result")
 const submitBtn = document.getElementById("submit-but")
 
 submitBtn.addEventListener("click", function () {
-    const a = Number(getNum.value);
-    
-    if (isNaN(a)) {
-        result.value = 'Введіть число';
-        return;
-    }
+  let a = getNum.value;
+  if (isNaN(a) || a.toString().length === 0)  {
+      result.value = 'Введіть число';
+      return;
+  }
+   a = Number(a)
+   max_num(a);
+});
 
-
-      max_num(a);
-  
-  })
 
 
   function max_num(number)
