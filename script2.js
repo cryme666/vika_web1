@@ -5,16 +5,10 @@ const submitBtn = document.getElementById("submit-but")
 submitBtn.addEventListener("click", function () {
     const a = Number(getNum.value);
     
-    if (isNaN(a)) {
-        result.value = 'Enter natural number';
+    if (isNaN(a) || a <= 0) {
+        result.value = 'Введіть натуральне число';
         return;
     }
-
-    if (a <= 0) {
-        result.value = 'Enter natural number';
-        return;
-      }
-
       fibonacci(a);
   
   })
